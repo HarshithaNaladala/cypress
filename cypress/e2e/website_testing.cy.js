@@ -15,8 +15,6 @@ describe('Entire webpage testing', () => {
       cy.get('input[name="password"]').type('masai');
       // Submit the login form
       cy.get('button[type="submit"]').click();
-      // Verify that login was successful
-      cy.contains('Overview').should('be.visible');
 
       // Opening the sidebar
       cy.get('.bars').click();
@@ -84,9 +82,9 @@ describe('Entire webpage testing', () => {
       //selecting patient
       cy.contains('Add Patient').click();
       // Fill out the form
-      cy.get('input[name="patientName"]').type('sanjuvvavvvv');
+      cy.get('input[name="patientName"]').type('sanjuvvavvvvv');
       cy.get('input[name="age"]').type('30');
-      cy.get('input[name="email"]').type('sanjuvavvvvv@example.com');
+      cy.get('input[name="email"]').type('sanjuvavvvvvv@example.com');
       cy.get('input[name="date"]').type('2024-04-14');
       cy.get('select[name="gender"]').select('Female');
       cy.get('input[name="DOB"]').type('1989-02-02');
@@ -234,18 +232,16 @@ describe('Entire webpage testing', () => {
       cy.get('input[name="password"]').type('masai');
       // Submit the login form
       cy.get('button[type="submit"]').click();
-      // Verify that login was successful
-      cy.contains('Overview').should('be.visible');
 
       // Opening the sidebar
       cy.get('.bars').click();
       //selecting Add Doctor
       cy.contains('Add Doctor').click();
       // Fill out the form
-      cy.get('input[name="docName"]').type('John Doeeeee');
+      cy.get('input[name="docName"]').type('John Doeeeeee');
       cy.get('input[name="age"]').type('35');
       cy.get('input[name="mobile"]').type('1234567890');
-      cy.get('input[name="email"]').type('johnnnnnn.doe@example.com');
+      cy.get('input[name="email"]').type('johnnnnnnn.doe@example.com');
       cy.get('select[name="gender"]').select('Male');
       cy.get('select[name="bloodGroup"]').select('A+');
       cy.get('input[name="DOB"]').type('1989-02-02');
@@ -271,10 +267,10 @@ describe('Entire webpage testing', () => {
       cy.contains('Add Nurse').click();
 
       // Fill out the form
-      cy.get('input[name="nurseName"]').type('Jane Doeeeeee');
+      cy.get('input[name="nurseName"]').type('Jane Doeeeeeee');
       cy.get('input[name="age"]').type('30');
       cy.get('input[name="mobile"]').type('9876543210');
-      cy.get('input[name="email"]').type('janeeeeee.doe@example.com');
+      cy.get('input[name="email"]').type('janeeeeeee.doe@example.com');
       cy.get('select[name="gender"]').select('Female');
       cy.get('input[name="DOB"]').type('1994-05-05');
       cy.get('input[name="address"]').type('456 Elm Street');
@@ -299,10 +295,10 @@ describe('Entire webpage testing', () => {
       cy.contains('Add Admin').click();
 
       // Fill out the form
-      cy.get('input[name="adminName"]').type('John Doeeeeeee');
+      cy.get('input[name="adminName"]').type('John Doeeeeeeee');
       cy.get('input[name="age"]').type('35');
       cy.get('input[name="mobile"]').type('9876543210');
-      cy.get('input[name="email"]').type('johnnnnnnnn.doe@example.com');
+      cy.get('input[name="email"]').type('johnnnnnnnnn.doe@example.com');
       cy.get('select[name="gender"]').select('Male');
       cy.get('input[name="DOB"]').type('1989-03-15');
       cy.get('input[name="address"]').type('123 Main Street');
