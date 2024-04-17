@@ -15,6 +15,8 @@ describe('Entire webpage testing', () => {
       cy.get('input[name="password"]').type('masai');
       // Submit the login form
       cy.get('button[type="submit"]').click();
+      // Verify that login was successful
+      cy.contains('Change').should('be.visible');
 
       // Opening the sidebar
       cy.get('.bars').click();
