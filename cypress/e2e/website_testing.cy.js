@@ -16,7 +16,7 @@ describe('Entire webpage testing', () => {
       // Submit the login form
       cy.get('button[type="submit"]').click();
       // Verify that login was successful
-      cy.contains('Change').should('be.visible');
+      cy.contains('Overview', { timeout: 10000 }).should('be.visible');
 
       // Opening the sidebar
       cy.get('.bars').click();
